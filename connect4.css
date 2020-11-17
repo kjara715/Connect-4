@@ -1,0 +1,140 @@
+/* game board table */
+h1 {
+  text-align: center;
+  display: inline-block;
+  width: 500px;
+  background-color: rgb(214, 181, 169);
+  font-family: 'Allerta Stencil';
+  font-size: 40px;
+  
+}
+
+button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: 'Allerta Stencil';
+  border-radius: 15%;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color:  #216624;
+}
+
+#board td {
+  width: 50px;
+  height: 50px;
+  border: solid 1px #666;
+  background-color: blue;
+}
+
+#board {
+  border: solid 10px darkblue;
+  background-color: rgb(84, 169, 197);
+  border-bottom: solid 20px darkblue;
+  border-top: solid 2px darkblue;  
+  
+}
+
+/* pieces are div within game table cells: draw as colored circles */
+.piece {
+  /* TODO: make into circles */
+  margin: 5px;
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  /* position: absolute; */
+  animation-name: fall-animation;
+  animation-duration: 500ms;
+  
+}
+
+@keyframes fall-animation {
+from {
+    transform: translateY(-300px);
+}
+to {
+    transform: translateY(0);
+}
+}
+
+
+html {
+  background-image: url('stillness-inmotion-5N75xeV9x9Q-unsplash.jpg');
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.whichPlayer {
+  text-align: center;
+  display: inline-block;
+  width: 200px;
+  height: 45px;
+  background-color: lightgoldenrodyellow;
+  margin: 15px;
+  
+  /* border: solid 4px darkmagenta; */
+  font-family: 'Allerta Stencil';
+}
+
+.key {
+  text-align: center;
+  display: inline-block;
+  width: 350px;
+  height: 35px;
+  background-color: rgb(192, 214, 221);
+  margin: 15px;
+  
+  /* border: solid 2px darkmagenta; */
+  font-family: 'Allerta Stencil';
+
+}
+
+.p1 {
+  background-color: yellow;
+}
+
+.p2 {
+  background-color: red;
+}
+
+.container {
+  text-align: center;
+}
+
+#game {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+
+/* column-top is table row of clickable areas for each column */
+#column-top td {
+  border: dashed 1px lightgray;
+  text-align: center;
+  color: gray;
+  background-color: white;
+}
+
+
+#column-top td:hover {
+  background-color: gold;
+}
