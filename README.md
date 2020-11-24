@@ -10,3 +10,6 @@ When a player wins or there is a tie, an alert will show on the page.
 
 To clear the game and restart the board, the user will click the "Play Again" button beneath the gameboard.
 
+Link to play:
+https://kjara715.github.io/Connect-4/
+
