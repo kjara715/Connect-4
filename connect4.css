@@ -2,11 +2,9 @@
 h1 {
   text-align: center;
   display: inline-block;
-  width: 500px;
-  background-color: rgb(214, 181, 169);
+  width: 400px;
   font-family: 'Allerta Stencil';
-  font-size: 40px;
-  
+  font-size: 45px;
 }
 
 button {
@@ -18,8 +16,8 @@ button {
   text-decoration: none;
   display: inline-block;
   font-family: 'Allerta Stencil';
-  border-radius: 15%;
   font-size: 16px;
+  box-shadow: 0px 5px 5px rgb(48, 47, 47);
 }
 
 button:hover {
@@ -29,17 +27,19 @@ button:hover {
 #board td {
   width: 50px;
   height: 50px;
-  border: solid 1px #666;
-  background-color: blue;
+  border: solid 1ps blue;
+  border-radius: 50%;
+  background-color: rgb(241, 237, 237);
+  box-shadow: inset 2px 2px 3px black;
 }
 
-#board {
+/* #board {
   border: solid 10px darkblue;
   background-color: rgb(84, 169, 197);
   border-bottom: solid 20px darkblue;
   border-top: solid 2px darkblue;  
   
-}
+} */
 
 /* pieces are div within game table cells: draw as colored circles */
 .piece {
@@ -48,9 +48,11 @@ button:hover {
   width: 80%;
   height: 80%;
   border-radius: 50%;
+  
   /* position: absolute; */
   animation-name: fall-animation;
   animation-duration: 500ms;
+  box-shadow: 0px 5px 5px rgb(48, 47, 47);
   
 }
 
@@ -104,12 +106,16 @@ img {
 
 }
 
+
+
 .p1 {
   background-color: yellow;
+  /* border: solid 3px rgb(167, 167, 13); */
 }
 
 .p2 {
   background-color: red;
+  /* border: solid 3px rgb(143, 3, 3); */
 }
 
 .container {
@@ -120,6 +126,7 @@ img {
   text-align: center;
   display: flex;
   justify-content: center;
+  background-color: rgb(29, 29, 124);
 }
 
 
@@ -132,6 +139,14 @@ img {
   text-align: center;
   color: gray;
   background-color: white;
+  font-weight: 300;
+  font-size: larger;
+  /* border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg); */
 }
 
 
